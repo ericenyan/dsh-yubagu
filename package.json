@@ -1,0 +1,68 @@
+{
+  "name": "dsh-yubagu",
+  "version": "0.1.0",
+  "private": false,
+  "description": "鱼八股拦截：开口之前先撞一次词表，撞上了整句退回去重说",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "wordlist.json",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-plugins"
+      ]
+    }
+  },
+  "os": [
+    "linux",
+    "darwin",
+    "win32"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2",
+    "@deepseek-ai/dsh-llm": "^0.2.1-rc.2",
+    "@deepseek-ai/schemastery": "^3.18.2"
+  },
+  "dshTarget": "0.2.1-rc.2",
+  "author": "ericenyan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericenyan/dsh-yubagu.git"
+  },
+  "homepage": "https://github.com/ericenyan/dsh-yubagu#readme",
+  "bugs": {
+    "url": "https://github.com/ericenyan/dsh-yubagu/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "ai-slop",
+    "prompt",
+    "writing",
+    "chinese"
+  ]
+}

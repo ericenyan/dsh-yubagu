@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- dsh-yubagu icon: 一条鱼撞上一堵写着字的墙 -->
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#eaf2ff" stroke="#2f5d9e" stroke-width="2"/>
+  <!-- 墙 -->
+  <path d="M40 10 V54" stroke="#2f5d9e" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="44" y1="20" x2="54" y2="20" stroke="#7a93b8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="44" y1="30" x2="54" y2="30" stroke="#7a93b8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="44" y1="40" x2="54" y2="40" stroke="#7a93b8" stroke-width="2" stroke-linecap="round"/>
+  <!-- 鱼身 -->
+  <path d="M30 30 C24 22 12 24 10 32 C12 40 24 42 30 34 Z" fill="#5aa9e6" stroke="#2f5d9e" stroke-width="2" stroke-linejoin="round"/>
+  <!-- 尾巴 -->
+  <path d="M8 26 L2 32 L8 38 Z" fill="#5aa9e6" stroke="#2f5d9e" stroke-width="2" stroke-linejoin="round"/>
+  <!-- 眼睛（被撞得眯起来） -->
+  <path d="M26 29 L30 32 L26 35" fill="none" stroke="#12395f" stroke-width="2" stroke-linecap="round"/>
+  <!-- 撞出来的星点 -->
+  <circle cx="36" cy="26" r="1.6" fill="#f4a340"/>
+  <circle cx="38" cy="38" r="1.2" fill="#f4a340"/>
+  <circle cx="33" cy="20" r="1.2" fill="#f4a340"/>
+</svg>

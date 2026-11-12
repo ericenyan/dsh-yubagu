@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Yubagu Guard",
+    "description": "Runs a phrase list against a draft before it goes out. A hit does not mean swapping a word — it means backing the whole sentence up and saying again what you actually meant to tell him. Three tiers: hard hits, possible hits, and shape suspicions that only the speaker can judge."
+  }
+}

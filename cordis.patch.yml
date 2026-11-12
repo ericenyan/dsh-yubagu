@@ -1,0 +1,12 @@
+# dsh-yubagu bundle patch —— 鱼八股拦截
+#
+# 机制：不掐正文（DSH 里一句正文是一口气吐完的，掐不断也改不动）。
+#   ① 每轮往「当前上下文」塞一段钩子：要发出去的那段话先递给 yubagu_collide 撞一次
+#   ② 提供三个工具：yubagu_collide（撞一次）/ yubagu_daily（写今天那句）/ yubagu_list（看词表或账）
+#   ③ 面板 /api/yubagu：人和她都能看，词表两边都能写
+#   ④ agent/turn-stopping：这一轮没递去撞就记账标红（防偷懒）
+#
+# 配置项见 lib/index.js 的 Config；机制与边界见 README.md。
+- insert:
+    - id: yubagu
+      name: dsh-yubagu

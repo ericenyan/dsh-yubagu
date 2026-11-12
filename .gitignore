@@ -1,0 +1,7 @@
+# 运行时产物：账、日志、每天的总结、面板改过的开关
+data/
+
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
